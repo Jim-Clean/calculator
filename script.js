@@ -1,7 +1,3 @@
-var a = 2;
-var b = 12;
-
-
 const add = function(a, b) {
 	return a+b;
 };
@@ -16,4 +12,17 @@ const multiply = function(a, b) {
 
 const divide = function(a, b) {
     return a/b;
+};
+
+const operate = function(num1,operator,num2,) {
+
+    if (operator === "+") {
+        return add(num1,num2);
+    } else if (operator === "-") {
+        return subtract(num1,num2);
+    } else if (operator === "*") {
+        return multiply(num1,num2);
+    } else if (operator === "/") {
+        return divide(num1,num2);
+    };
 };
