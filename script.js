@@ -1,3 +1,7 @@
+var a = 2;
+var b = 12;
+
+
 const add = function(a, b) {
 	return a+b;
 };
@@ -8,8 +12,8 @@ const subtract = function(a, b) {
 
 const multiply = function(a, b) {
    return a*b;
- };
+};
 
- const divide = function(a, b) {
+const divide = function(a, b) {
     return a/b;
-  };
+};
