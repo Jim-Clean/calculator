@@ -15,7 +15,6 @@ const divide = function(a, b) {
 };
 
 const operate = function(num1,operator,num2,) {
-
     if (operator === "+") {
         return add(num1,num2);
     } else if (operator === "-") {
