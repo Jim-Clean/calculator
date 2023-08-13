@@ -35,3 +35,14 @@ const buttons = document.querySelectorAll('button');
         return document.getElementById("display").innerHTML += button.value;
     });
 });
+
+const numbers = document.querySelectorAll('button.num');
+    // we use the .forEach method to iterate through each button
+    numbers.forEach((number) => {
+
+  // and for each one we add a 'click' listener
+    number.addEventListener('click', () => {
+        return console.log(number.value);
+    });
+});
+
