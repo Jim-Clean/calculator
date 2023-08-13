@@ -46,3 +46,12 @@ const numbers = document.querySelectorAll('button.num');
     });
 });
 
+const operators = document.querySelectorAll('button.operator');
+    // we use the .forEach method to iterate through each button
+    operators.forEach((operator) => {
+
+  // and for each one we add a 'click' listener
+    operator.addEventListener('click', () => {
+        return console.log(operator.getAttribute('op'));
+    });
+});
