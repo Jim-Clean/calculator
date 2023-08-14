@@ -36,13 +36,16 @@ const buttons = document.querySelectorAll('button');
     });
 });
 
+
 const numbers = document.querySelectorAll('button.num');
     // we use the .forEach method to iterate through each button
     numbers.forEach((number) => {
 
   // and for each one we add a 'click' listener
     number.addEventListener('click', () => {
-        return console.log(number.value);
+        console.log(number.value);
+        nums = parseInt(number.value);
+        return nums
     });
 });
 
@@ -52,6 +55,12 @@ const operators = document.querySelectorAll('button.operator');
 
   // and for each one we add a 'click' listener
     operator.addEventListener('click', () => {
-        return console.log(operator.getAttribute('op'));
+        console.log(operator.getAttribute('op'));
+        ops = operator.getAttribute('op');
+        return ops
     });
 });
+
+const calc = function() {
+    return console.log(add(nums, nums));
+}
