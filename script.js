@@ -69,5 +69,7 @@ const operators = document.querySelectorAll('button.operator');
 });
 
 const calc = function() {
-    return console.log(add(num1, num2));
+    if ("num2" in window) {
+    document.getElementById("display").innerHTML = operate(num1, ops, num2);
+    }
 }
