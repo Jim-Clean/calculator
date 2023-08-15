@@ -70,6 +70,8 @@ const operators = document.querySelectorAll('button.operator');
 
 const calc = function() {
     if ("num2" in window) {
-    document.getElementById("display").innerHTML = operate(num1, ops, num2);
+    var answer = operate(num1, ops, num2)
+    document.getElementById("display").innerHTML = answer;
+    num1 = answer;
     }
 }
