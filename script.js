@@ -97,12 +97,12 @@ const calc = function() {
 }
 
 
-const clear = function() {
+const refresh = function() {
     document.getElementById("display").innerHTML = "";
-    answer = "";
-    num1 = "";
-    num2 = "";
-    ops = "";
+    answer = 0;
+    delete window.num1;
+    delete window.ops;
+    delete window.num2;
 }
 
 const show = function() {
