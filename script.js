@@ -25,7 +25,6 @@ const operate = function(num1,operator,num2,) {
         return divide(num1,num2);
     };
 };
-
 /*
 
 const buttons = document.querySelectorAll('button');
@@ -47,13 +46,25 @@ const numbers = document.querySelectorAll('button.num');
     number.addEventListener('click', () => {
         document.getElementById("display").innerHTML = number.value;
         if ("ops" in window) { 
+            if ("num2" in window){
+            console.log(number.value);
+            num2 = parseInt(num2 + number.value);
+            return num2 
+            } else {
             console.log(number.value);
             num2 = parseInt(number.value);
             return num2
+            } 
         } else {
+            if ("num1" in window){
+            console.log(number.value);
+            num1 = parseInt(num1 + number.value);
+            return num1 
+            } else {
             console.log(number.value);
             num1 = parseInt(number.value);
-            return num1   
+            return num1
+            }   
         }
     });
 });
@@ -80,6 +91,7 @@ const calc = function() {
     }
 }
 
+
 const clear = function() {
     document.getElementById("display").innerHTML = "";
     answer = "";
@@ -87,3 +99,5 @@ const clear = function() {
     num2 = "";
     ops = "";
 }
+
+// 12 + 7 - 5 * 3 = 42
