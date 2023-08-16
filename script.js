@@ -26,16 +26,18 @@ const operate = function(num1,operator,num2,) {
     };
 };
 
+/*
+
 const buttons = document.querySelectorAll('button');
     // we use the .forEach method to iterate through each button
     buttons.forEach((button) => {
 
   // and for each one we add a 'click' listener
     button.addEventListener('click', () => {
-        return document.getElementById("display").innerHTML += button.value;
+        return document.getElementById("display").innerHTML = button.value;
     });
 });
-
+*/
 
 const numbers = document.querySelectorAll('button.num');
     // we use the .forEach method to iterate through each button
@@ -43,6 +45,7 @@ const numbers = document.querySelectorAll('button.num');
 
   // and for each one we add a 'click' listener
     number.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = number.value;
         if ("ops" in window) { 
             console.log(number.value);
             num2 = parseInt(number.value);
@@ -73,5 +76,14 @@ const calc = function() {
     var answer = operate(num1, ops, num2)
     document.getElementById("display").innerHTML = answer;
     num1 = answer;
+    num2 = 0;
     }
+}
+
+const clear = function() {
+    document.getElementById("display").innerHTML = "";
+    answer = "";
+    num1 = "";
+    num2 = "";
+    ops = "";
 }
