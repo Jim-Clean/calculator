@@ -44,7 +44,12 @@ const numbers = document.querySelectorAll('button.num');
 
   // and for each one we add a 'click' listener
     number.addEventListener('click', () => {
-        document.getElementById("display").innerHTML = number.value;
+        const show = function() {
+            if ("ops" in window) {
+                document.getElementById("display").innerHTML = number.value;
+            }
+        }
+            document.getElementById("display").innerHTML += number.value;
         if ("ops" in window) { 
             if ("num2" in window){
             console.log(number.value);
@@ -100,4 +105,17 @@ const clear = function() {
     ops = "";
 }
 
-// 12 + 7 - 5 * 3 = 42
+const show = function() {
+    const numbers = document.querySelectorAll('button.num');
+    // we use the .forEach method to iterate through each button
+    numbers.forEach((number) => {
+
+  // and for each one we add a 'click' listener
+    number.addEventListener('click', () => {
+
+    if ("ops" in window) {
+        document.getElementById("display").innerHTML = num2;
+    }
+    });
+    });
+}
