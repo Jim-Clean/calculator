@@ -30,6 +30,7 @@ p {
     align-items: center;
     background-color: #2d2d30;
     width: 100%;
+    margin-bottom: 200px;
 }
 
 .footer {
@@ -76,4 +77,5 @@ p {
     font-weight: initial;
     text-shadow: 1.3px 1.3px #383838;
     margin: 5px;
+    height: 80px;
 }
