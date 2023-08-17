@@ -90,7 +90,7 @@ const operators = document.querySelectorAll('button.operator');
 const calc = function() {
     if ("num2" in window) {
     var answer = operate(num1, ops, num2)
-    document.getElementById("display").innerHTML = answer;
+    document.getElementById("display").innerHTML = parseFloat((answer).toFixed(5));
     num1 = answer;
     if (ops === "/") {
     delete window.num2;
