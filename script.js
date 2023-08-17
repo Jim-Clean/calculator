@@ -92,7 +92,11 @@ const calc = function() {
     var answer = operate(num1, ops, num2)
     document.getElementById("display").innerHTML = answer;
     num1 = answer;
-    num2 = 0;
+    if (ops === "/") {
+    delete window.num2;
+    } else {
+    num2 = 0;  
+    }
     }
 }
 
