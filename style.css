@@ -30,7 +30,7 @@ p {
     align-items: center;
     background-color: #2d2d30;
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 190px;
 }
 
 .footer {
@@ -78,4 +78,25 @@ p {
     text-shadow: 1.3px 1.3px #383838;
     margin: 5px;
     height: 80px;
+}
+
+button  {
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.operator {
+    background-color: #007acc;
+    color: white;
+    font-size: 24px;
+}
+
+.equals {
+    background-color: orange;
+    font-size: 24px;
+}
+
+.clr { 
+    background-color: black;
+    color: white;
 }
