@@ -24,7 +24,7 @@ p {
     align-items: center;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,42 @@ p {
     align-items: center;
     background-color: #2d2d30;
     width: 100%;
-    position:fixed;
-    bottom:0;
+    position: fixed;
+    bottom: 0;
+}
+
+#git {
+    width: 30px;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.7s;
+}
+
+#git:hover {
+    transition: 0.7s;
+    transform: rotate(360deg) scale(1.1);
+}
+
+.calc-wrapper {
+    background-color: black;
+    border: 10px solid rgba(47,47,47,1);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(4, 80px);
+    gap: 2px;
+}
+
+#display {
+    grid-column: 1 / -1;
+    background-color: #b2b9b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5.5em;
+    font-weight: initial;
+    text-shadow: 1.3px 1.3px #383838;
+    margin: 5px;
 }
